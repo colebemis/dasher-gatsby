@@ -1,0 +1,15 @@
+{
+  "name": "dasher",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.33",
+    "gatsby-plugin-typescript": "^2.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
