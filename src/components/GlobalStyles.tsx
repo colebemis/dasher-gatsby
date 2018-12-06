@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { Global, jsx } from '@emotion/core'
+import theme from '../theme'
 
 const GlobalStyles: React.FunctionComponent<{}> = () => {
   return (
@@ -11,7 +12,10 @@ const GlobalStyles: React.FunctionComponent<{}> = () => {
         body: {
           boxSizing: 'border-box',
           margin: 0,
-          fontFamily: 'system-ui',
+          fontFamily: theme.fonts.sans,
+          lineHeight: theme.lineHeights.normal,
+          color: theme.colors.grayAlpha[9],
+          backgroundColor: theme.colors.gray[1],
         },
       }}
     />

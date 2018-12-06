@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "lib": ["dom", "esnext"],
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "jsx": "react",
     "jsxFactory": "jsx"
   },
