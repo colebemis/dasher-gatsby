@@ -11,7 +11,7 @@ const Index: React.FunctionComponent<{}> = () => {
     <Router>
       <Home path="/" />
       <Board path="/board/:boardId" />
-      <NotFound default />
+      <NotFound default={true} />
     </Router>
   )
 }
