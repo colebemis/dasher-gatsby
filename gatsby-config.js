@@ -1,3 +1,9 @@
 module.exports = {
-  plugins: ['gatsby-plugin-typescript'],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: { jsxPragma: 'jsx' },
+    },
+    'gatsby-plugin-emotion',
+  ],
 }

@@ -3,7 +3,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "preserve"
+    "jsx": "react",
+    "jsxFactory": "jsx"
   },
   "include": ["src"]
 }
