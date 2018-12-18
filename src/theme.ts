@@ -1,40 +1,8 @@
 import colors from 'open-color'
 import toAlpha from './utils/toAlpha'
 
-export interface Theme {
-  spacing: string[]
-  fonts: {
-    sans: string
-    mono: string
-  }
-  fontSizes: string[]
-  fontWeights: {
-    normal: number
-    medium: number
-    semibold: number
-    bold: number
-  }
-  lineHeights: {
-    none: number
-    tight: number
-    normal: number
-    loose: number
-  }
-  colors: {
-    primary: string[]
-    red: string[]
-    green: string[]
-    violet: string[]
-    gray: string[]
-    grayAlpha: string[]
-    white: string
-    black: string
-  }
-  radii: string[]
-}
-
-const theme: Theme = {
-  spacing: [
+const theme = {
+  space: [
     '0',
     '0.25rem',
     '0.5rem',
@@ -96,13 +64,13 @@ const theme: Theme = {
   },
   colors: {
     primary: colors.blue,
-    red: colors.red,
-    green: colors.green,
-    violet: colors.violet,
     gray: colors.gray,
     grayAlpha: colors.gray.map(color => toAlpha(color)),
     white: colors.white,
     black: colors.black,
+    red: colors.red,
+    green: colors.green,
+    violet: colors.violet,
   },
   radii: ['0', '2px', '4px', '6px'],
 }
